@@ -2,8 +2,8 @@ package Chapter6;
 
 public class Rectangle {
 
-    double length;
-    double width;
+    private double length;
+    private double width;
 
     //Default Constructor
     public Rectangle(){
@@ -17,7 +17,6 @@ public class Rectangle {
         setWidth(width);
 
     }
-
 
     //Get the stored length value
     double getLength() {
