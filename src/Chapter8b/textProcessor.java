@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class textProcessor {
     public static void main(String[] args) {
-        /**String inputText;
+        String inputText;
         Scanner sc = new Scanner(System.in);
         System.out.println("Please type in a sentence to count the words");
         inputText = sc.nextLine();
@@ -12,7 +12,7 @@ public class textProcessor {
         
      
         countWords(inputText);
-        reverseString(inputText);**/
+        reverseString(inputText);
         addSpace("ThisisAStringWithoutSpaces");
     
     }
