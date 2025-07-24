@@ -28,6 +28,7 @@ public class textProcessor {
                     i++;
                 }
         }
+        System.out.println("The string with spaces is " + spacedString.toString());
     }
 
     public static void reverseString(String inputText) {
