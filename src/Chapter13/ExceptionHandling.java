@@ -15,8 +15,9 @@ public class ExceptionHandling{
 
     private static void numbersExceptionHandling() {
         File file = new File("resources/numbers.txt");
+        Scanner fileRead = null;
         try{
-            Scanner fileRead = new Scanner(file);
+            fileRead = new Scanner(file);
             while(fileRead.hasNextLine()){
                 double num = fileRead.nextDouble();
                 System.out.println("Number: " + num);
@@ -25,9 +26,10 @@ public class ExceptionHandling{
     }catch (FileNotFoundException | InputMismatchException e){
         e.printStackTrace();
 
+    }finally{
+        fileRead.close();
     }
     }
-
     private static void createNewFile() {
         // TODO Auto-generated method stub
         File file = new File("resources/nonexistent.txt");
@@ -37,8 +39,6 @@ public class ExceptionHandling{
         } catch (IOException e) {
             System.out.println("Direcrtory does not exist ");
             e.printStackTrace();
-        }finally{
-            
         }
     }
 }
